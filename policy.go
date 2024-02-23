@@ -77,6 +77,9 @@ func (statementJSON *Statement) Parse(statement map[string]interface{}) {
 		case "StatementID":
 			// Type assertion to assign
 			statementJSON.StatementID = statementValue.(string)
+		case "Sid":
+			// Type assertion to assign
+			statementJSON.StatementID = statementValue.(string)
 		case "Effect":
 			//Type assertion to assign
 			statementJSON.Effect = statementValue.(string)
