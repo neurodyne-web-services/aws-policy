@@ -9,7 +9,7 @@ type Policy struct {
 
 // Statement represents the body of an AWS IAM policy document
 type Statement struct {
-	StatementID  string              `json:"StatementID,omitempty"`  // Statement ID, service specific
+	StatementID  string              `json:"Sid,omitempty"`          // Statement ID, service specific
 	Effect       string              `json:"Effect"`                 // Allow or Deny
 	Principal    map[string][]string `json:"Principal,omitempty"`    // principal that is allowed or denied
 	NotPrincipal map[string][]string `json:"NotPrincipal,omitempty"` // exception to a list of principals
