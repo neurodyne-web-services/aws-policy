@@ -2,9 +2,10 @@ package policy
 
 // Policy represents an AWS IAM policy document
 type Policy struct {
-	Version    string      `json:"Version"`
-	ID         string      `json:"ID,omitempty"`
-	Statements []Statement `json:"Statement"`
+	Version     string      `json:"Version"`
+	ID          string      `json:"ID,omitempty"`
+	Description string      `json:"Description,omitempty"`
+	Statements  []Statement `json:"Statement"`
 }
 
 // Statement represents the body of an AWS IAM policy document
